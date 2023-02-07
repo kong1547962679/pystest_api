@@ -1,0 +1,8 @@
+"2023-02-06 13:20:54| WARNING|cases_api.py[:17]|----------------------------------------------------------------------------------------------------"
+"2023-02-06 13:20:54| WARNING|cases_api.py[:18]|------------------------------access_token------------------------------"
+"2023-02-06 13:20:54|    INFO|cases_api.py[:20]|url：http://api.weixin.qq.com/cgi-bin/token"
+"2023-02-06 13:20:54|    INFO|cases_api.py[:21]|method：get"
+"2023-02-06 13:20:54|    INFO|cases_api.py[:23]|params：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}"
+"2023-02-06 13:20:54|    INFO|cases_api.py[:28]|validate：[{'eq': ['status_code', 20]}, {'con': ['status_code', 200]}, {'eq': ['status_code', 200]}]"
+"2023-02-06 13:20:54|    INFO|cases_api.py[:43]|msg：{"access_token":"65_IX0EYX-gCAAoz_9oC03Omk-8AokDZKzcSS_envtC1xoNHNue7SARLptc15L2LrVrIU0CP9ukWdd7xMTH-cf44shIqw-HVmLpuFClnKUM-xdfVWiNPvqbKqbVMAUVUWhAHANMO","expires_in":7200}"
+"2023-02-06 13:20:54|   ERROR|cases_api.py[:60]|200 == 20"

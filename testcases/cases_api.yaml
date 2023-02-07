@@ -1,0 +1,35 @@
+-
+  name: access_token
+  method: get
+  url: http://api.weixin.qq.com/cgi-bin/token
+  params: {
+            'grant_type':'client_credential',
+            'appid':'wx8a9de038e93f77ab',
+            'secret':'8326fc915928dee3165720c910effb86'
+        }
+  validate:
+    - eq: [ status_code, 200 ]
+    - con: [ status_code, 400 ]
+
+-
+  parameters:
+    - { "name": edit_flag," method": post}
+    - { "name": edit_flag02," method": get}
+  name: parameters.name
+  method: parameters.method
+  url: http://api.weixin.qq.com/cgi-bin/tags/update
+  params: {'access_token': 'access_token'}
+  json: {"tag":{"id":123,"name":"广东人"}}
+  validate:
+    - eq: [ status_code, 200 ]
+    - con: [ status_code, 400 ]
+
+-
+  name: file_upload
+  method: post
+  url: http://api.weixin.qq.com/cgi-bin/media/uploadimg
+  params: {'access_token': 'access_token'}
+  files: /Users/kong/Desktop/WeChatbac7e8d1434de65decdc189bc68cfdb8.png
+  validate:
+    - eq: [ status_code, 200 ]
+    - con: [ status_code, 400 ]

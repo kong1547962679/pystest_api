@@ -1,0 +1,8 @@
+WARNING  cases_api:cases_api.py:17 ----------------------------------------------------------------------------------------------------
+WARNING  cases_api:cases_api.py:18 ------------------------------access_token------------------------------
+INFO     cases_api:cases_api.py:20 url：http://api.weixin.qq.com/cgi-bin/token
+INFO     cases_api:cases_api.py:21 method：get
+INFO     cases_api:cases_api.py:23 params：{'grant_type': 'client_credential', 'appid': 'wx8a9de038e93f77ab', 'secret': '8326fc915928dee3165720c910effb86'}
+INFO     cases_api:cases_api.py:28 validate：[{'eq': ['status_code', 20]}, {'con': ['status_code', 200]}, {'eq': ['status_code', 200]}]
+INFO     cases_api:cases_api.py:43 msg：{"access_token":"65_IX0EYX-gCAAoz_9oC03Omk-8AokDZKzcSS_envtC1xoNHNue7SARLptc15L2LrVrIU0CP9ukWdd7xMTH-cf44shIqw-HVmLpuFClnKUM-xdfVWiNPvqbKqbVMAUVUWhAHANMO","expires_in":7200}
+ERROR    cases_api:cases_api.py:60 200 == 20
